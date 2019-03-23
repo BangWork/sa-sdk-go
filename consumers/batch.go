@@ -47,7 +47,7 @@ func (c *BatchConsumer) Flush() error {
 		return err
 	}
 
-	send(c.Url, string(jdata), c.Timeout, true)
+	err = send(c.Url, string(jdata), c.Timeout, true)
 	if err != nil {
 		count := 0
 		for ; count < 3; count++ {
@@ -55,6 +55,7 @@ func (c *BatchConsumer) Flush() error {
 			if err == nil {
 				break
 			}
+			log.Printf("try failed: %v ,try times = %d", err, count)
 		}
 		if count >= 3 {
 			log.Printf("track failed: %v ,try times = %d", err, count)
