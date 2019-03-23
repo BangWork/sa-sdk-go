@@ -2,10 +2,10 @@ package test
 
 import (
 	"fmt"
-	"time"
 	"testing"
+	"time"
 
-	sdk "github.com/sensorsdata/sa-sdk-go"
+	sdk "github.com/NiuQiang00/sa-sdk-go"
 )
 
 const (

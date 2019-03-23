@@ -1,10 +1,10 @@
 package consumers
 
 import (
-	"time"
 	"encoding/json"
+	"time"
 
-	"github.com/sensorsdata/sa-sdk-go/structs"
+	"github.com/NiuQiang00/sa-sdk-go/structs"
 )
 
 type DefaultConsumer struct {
@@ -32,4 +32,3 @@ func (c *DefaultConsumer) Flush() error {
 func (c *DefaultConsumer) Close() error {
 	return nil
 }
-

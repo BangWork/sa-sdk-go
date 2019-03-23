@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	sdk "github.com/sensorsdata/sa-sdk-go"
+	sdk "github.com/NiuQiang00/sa-sdk-go"
 )
 
 func TestDefaultConsumer(t *testing.T) {
@@ -32,4 +32,3 @@ func TestDefaultConsumer(t *testing.T) {
 
 	t.Log("Default consumer ok")
 }
-

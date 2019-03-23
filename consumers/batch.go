@@ -1,16 +1,16 @@
 package consumers
 
 import (
-	"time"
 	"encoding/json"
+	"log"
+	"time"
 
-	"github.com/sensorsdata/sa-sdk-go/structs"
+	"github.com/NiuQiang00/sa-sdk-go/structs"
 )
 
 const (
 	BATCH_DEFAULT_MAX = 50
 )
-
 
 type BatchConsumer struct {
 	Url     string
@@ -48,7 +48,18 @@ func (c *BatchConsumer) Flush() error {
 	}
 
 	send(c.Url, string(jdata), c.Timeout, true)
-
+	if err != nil {
+		count := 0
+		for ; count < 3; count++ {
+			err = send(c.Url, string(jdata), c.Timeout, true)
+			if err == nil {
+				break
+			}
+		}
+		if count >= 3 {
+			log.Printf("track failed: %v ,try times = %d", err, count)
+		}
+	}
 	c.buffer = c.buffer[:0]
 
 	return nil

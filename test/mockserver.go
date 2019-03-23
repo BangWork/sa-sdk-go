@@ -1,13 +1,13 @@
 package test
 
 import (
-	"fmt"
 	"bytes"
-	"net/url"
-	"net/http"
-	"io/ioutil"
 	"compress/gzip"
 	"encoding/base64"
+	"fmt"
+	"io/ioutil"
+	"net/http"
+	"net/url"
 )
 
 func init() {

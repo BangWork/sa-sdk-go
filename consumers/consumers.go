@@ -3,8 +3,8 @@ package consumers
 import (
 	"time"
 
-	"github.com/sensorsdata/sa-sdk-go/utils"
-	"github.com/sensorsdata/sa-sdk-go/structs"
+	"github.com/NiuQiang00/sa-sdk-go/structs"
+	"github.com/NiuQiang00/sa-sdk-go/utils"
 )
 
 type Consumer interface {

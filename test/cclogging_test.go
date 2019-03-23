@@ -2,11 +2,11 @@ package test
 
 import (
 	"fmt"
-	"time"
 	"testing"
+	"time"
 
-	sdk "github.com/sensorsdata/sa-sdk-go"
-	"github.com/sensorsdata/sa-sdk-go/utils"
+	sdk "github.com/NiuQiang00/sa-sdk-go"
+	"github.com/NiuQiang00/sa-sdk-go/utils"
 )
 
 const (
@@ -57,7 +57,7 @@ func TestConcurrentLoggingConsumer(t *testing.T) {
 		return
 	}
 
-	if count != NUM_WRITERS * NUM_RECORDS {
+	if count != NUM_WRITERS*NUM_RECORDS {
 		t.Fatal("concurrentlogging consumer track failed, count not match", count)
 		return
 	}

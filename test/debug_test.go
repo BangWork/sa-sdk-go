@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	sdk "github.com/sensorsdata/sa-sdk-go"
+	sdk "github.com/NiuQiang00/sa-sdk-go"
 )
 
 func TestDebugConsumer(t *testing.T) {

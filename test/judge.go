@@ -1,10 +1,11 @@
 package test
+
 import (
-	"os"
-	"io"
 	"bufio"
 	"encoding/json"
-	"github.com/sensorsdata/sa-sdk-go/structs"
+	"github.com/NiuQiang00/sa-sdk-go/structs"
+	"io"
+	"os"
 )
 
 type EDL []structs.EventData

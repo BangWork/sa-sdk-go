@@ -1,14 +1,15 @@
 package utils
+
 import (
-	"os"
-	"fmt"
-	"time"
 	"bytes"
-	"errors"
-	"net/url"
-	"net/http"
 	"compress/gzip"
 	"encoding/base64"
+	"errors"
+	"fmt"
+	"net/http"
+	"net/url"
+	"os"
+	"time"
 )
 
 func DoRequest(url, args string, to time.Duration) error {
@@ -16,7 +17,7 @@ func DoRequest(url, args string, to time.Duration) error {
 
 	data := bytes.NewBufferString(args)
 
-	req, _ := http.NewRequest("POST", url , data)
+	req, _ := http.NewRequest("POST", url, data)
 
 	client := &http.Client{Timeout: to}
 	resp, err := client.Do(req)
