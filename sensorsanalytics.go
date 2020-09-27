@@ -6,9 +6,9 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/NiuQiang00/sa-sdk-go/consumers"
-	"github.com/NiuQiang00/sa-sdk-go/structs"
-	"github.com/NiuQiang00/sa-sdk-go/utils"
+	"github.com/bangwork/sa-sdk-go/consumers"
+	"github.com/bangwork/sa-sdk-go/structs"
+	"github.com/bangwork/sa-sdk-go/utils"
 )
 
 const (

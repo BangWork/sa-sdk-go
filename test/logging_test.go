@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	sdk "github.com/NiuQiang00/sa-sdk-go"
+	sdk "github.com/bangwork/sa-sdk-go"
 )
 
 const (

@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/NiuQiang00/sa-sdk-go/structs"
+	"github.com/bangwork/sa-sdk-go/structs"
 )
 
 const (

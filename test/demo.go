@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/NiuQiang00/sa-sdk-go/structs"
+	"github.com/bangwork/sa-sdk-go/structs"
 )
 
 var typemap map[string]int = map[string]int{

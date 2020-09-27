@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	sdk "github.com/NiuQiang00/sa-sdk-go"
+	sdk "github.com/bangwork/sa-sdk-go"
 )
 
 func TestBatchConsumer(t *testing.T) {

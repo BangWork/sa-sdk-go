@@ -3,7 +3,7 @@ package test
 import (
 	"bufio"
 	"encoding/json"
-	"github.com/NiuQiang00/sa-sdk-go/structs"
+	"github.com/bangwork/sa-sdk-go/structs"
 	"io"
 	"os"
 )
